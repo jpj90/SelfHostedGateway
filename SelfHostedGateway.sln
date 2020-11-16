@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfHostedGateway", "SelfHostedGateway\SelfHostedGateway.csproj", "{C8C2BAAB-997F-44B3-9E99-22BF7EDB0243}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SelfHostedGateway", "SelfHostedGateway\SelfHostedGateway.csproj", "{C8C2BAAB-997F-44B3-9E99-22BF7EDB0243}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SelfHostedWebApi", "SelfHostedWebApi\SelfHostedWebApi.csproj", "{F466987E-54CF-44EC-9121-70881DEA588F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{C8C2BAAB-997F-44B3-9E99-22BF7EDB0243}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8C2BAAB-997F-44B3-9E99-22BF7EDB0243}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8C2BAAB-997F-44B3-9E99-22BF7EDB0243}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F466987E-54CF-44EC-9121-70881DEA588F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F466987E-54CF-44EC-9121-70881DEA588F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F466987E-54CF-44EC-9121-70881DEA588F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F466987E-54CF-44EC-9121-70881DEA588F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
