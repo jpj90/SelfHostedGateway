@@ -13,7 +13,9 @@ namespace SelfHostedWebApi
       Host.CreateDefaultBuilder(args)
         .ConfigureWebHostDefaults(webBuilder =>
         {
-          webBuilder.UseStartup<Startup>();
+          webBuilder
+          .UseUrls("http://localhost:5200", "https://localhost:5201")
+          .UseStartup<Startup>();
         });
   }
 }
