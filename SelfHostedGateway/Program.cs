@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Configuration;
 
 namespace SelfHostedGateway
 {
@@ -13,7 +14,13 @@ namespace SelfHostedGateway
       Host.CreateDefaultBuilder(args)
         .ConfigureWebHostDefaults(webBuilder =>
         {
-          webBuilder.UseStartup<Startup1>();
+          webBuilder
+          .ConfigureAppConfiguration((hostingContext, config) => {
+            config
+              .SetBasePath(hostingContext.HostingEnvironment.ContentRootPath)
+              .AddJsonFile("ocelot.json");
+          })
+          .UseStartup<Startup1>();
         });
   }
 }
